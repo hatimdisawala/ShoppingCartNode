@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %> :: Home</title>
+    <link href="/stylesheets/style.css" type="text/css" rel="stylesheet" />
+
+    <script src="/javascripts/jquery-1.10.2.js"></script>
+    <script src="/javascripts/products.js"></script>
+    <script src="/javascripts/script.js"></script>
+  </head>
+  <body>
+    <section id="MainWrapper">
+        <header id="HeaderWrapper" class="container">
+            <hgroup>
+                <h1><%= title %></h1>
+                <h2><%= subtitle %></h2>
+            </hgroup>
+        </header> <!-- End: HeaderWrapper -->
+
+        <section id="BodyWrapper">
+
+            <div id="Content" class="pull-left">
+                <h2>Products</h2>
+
+                <ul class="list-products">
+                <% aProducts = eval(products);
+                var arrColors = ['teal','magenta','brown','green','red','blue','orange','purple'];
+                for(var i=0; i<aProducts.length; i++) {
+                    var r = i % 7;
+                %>
+                    <li data-id="p_<%=aProducts[i].id %>" data-qty="<%=aProducts[i].qty %>" class="product <%= arrColors[r] %>">
+                    <img class="thumb" src="<%=aProducts[i].image %>" />
+                    <h2><%=aProducts[i].name %></h2>
+                    <span class="price"><strong>Price:</strong> Rs. <%=aProducts[i].price %></span><br />
+                    <span class="qty"><strong>Quantity:</strong> <span class="amount"><%=aProducts[i].qty %></span> pcs.</span><br />
+                    <button name="addtocart">Add to Cart</button>
+
+                    </li>
+                <% } %>
+                </ul>
+            </div>
+
+            <div id="ColumnRight" class="pull-left">
+                <h2>Cart</h2>
+                <ul id="Cart" class="list-products">
+
+                </ul>
+            </div>
+            <div class="clear"></div>
+
+        </section> <!-- End: BodyWrapper -->
+
+        <footer id="FooterWrapper" class="container">
+            <div class="copyright">
+                &copy; 2013 All rights reserved.
+            </div>
+        </footer> <!-- End: FooterWrapper -->
+    </section> <!-- End: MainWrapper -->
+
+  </body>
+</html>

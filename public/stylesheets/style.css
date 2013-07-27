@@ -1,0 +1,159 @@
+body {
+    margin:0px;
+    padding: 0px;
+    font: normal 14px Arial, Verdana;
+    color: #000000;
+}
+a, a:hover, a:focus, a:visited {
+    color: #527578;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #84978F;
+}
+.container {
+    background: #A200FF;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.width-10 {width: 10%}
+.width-15 {width: 15%}
+.width-20 {width: 20%}
+.width-25 {width: 25%}
+.width-30 {width: 30%}
+.width-35 {width: 35%}
+.width-40 {width: 40%}
+.width-45 {width: 45%}
+.width-50 {width: 50%}
+.width-55 {width: 55%}
+.width-60 {width: 60%}
+.width-65 {width: 65%}
+.width-70 {width: 70%}
+.width-75 {width: 75%}
+.width-80 {width: 80%}
+.width-85 {width: 85%}
+.width-90 {width: 90%}
+.width-95 {width: 95%}
+.width-100 {width: 100%}
+
+.pull-left {float:left;}
+.pull-right {float:right;}
+.pull-center {width: 1000px; margin: 0 auto;}
+.clear, .clr {clear: both;}
+
+h1, h2, h3 {
+    font: normal 24px Arial;
+}
+h2 {
+    font-size: 18px;
+}
+
+#MainWrapper {
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid #527578;
+}
+
+#HeaderWrapper {
+    text-align: center;
+}
+
+#BodyWrapper {
+    position: relative;
+
+}
+#Content {
+    width: 780px;
+    padding: 10px;
+    position: relative;
+    border-right: 1px solid #527578;
+    /*margin-left: -1px;*/
+}
+#ColumnRight {
+    width: 179px;
+    padding: 10px;
+    border-left: 1px solid #527578;
+    margin-left: -1px;
+    /*position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;*/
+}
+
+.list-products {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.list-products li {
+    list-style: none;
+    float: left;
+    width: 368px;
+    margin: 1px;
+    background: #FF0097;
+    padding: 10px;
+    color: #ffffff;
+}
+.list-products li img.thumb {
+    background: #ececec;
+    border: 1px solid #ffffff;
+    padding: #ffffff;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    float: left;
+    margin: 0 10px 0px 0;
+}
+.list-products li button {
+    background: #ffffff;
+    color: #000000;
+    padding: 2px 5px;
+    border: 1px solid #000000;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.list-products li button:hover {
+    background: #d3d3d3;
+}
+.list-products li.purple {
+    background: #A200FF;
+}
+.list-products li.magenta {
+    background: #FF0097;
+}
+.list-products li.teal {
+    background: #00ABA9;
+}
+.list-products li.brown {
+    background: #A05000;
+}
+.list-products li.orange {
+    background: #F09609;
+}
+.list-products li.blue {
+    background: #1BA1E2;
+}
+.list-products li.red {
+    background: #E51400;
+}
+.list-products li.green {
+    background: #339933;
+}
+
+#ColumnRight .list-products li {
+    width: auto;
+    display: block;
+    float: none;
+    margin: 1px 0;
+    font-size: 90%;
+}
+#ColumnRight .list-products li img.thumb {
+    width: 50px;
+    height: 50px;
+}
+
+#FooterWrapper {
+    text-align: center;
+}
