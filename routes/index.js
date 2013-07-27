@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/shoppingcart');
 //mongoose.connect('mongodb://hatimgenius:scorp152@ds037508.mongolab.com:37508/shoppingcart');
 
-var schema = {
+/*var schema = {
     id : Number,
     name : String,
     price : Number,
@@ -16,7 +16,7 @@ var schema = {
     colors: Array
 }
 var Products = mongoose.model('products', schema);
-
+  */
 exports.index = function(req, res){
   res.render('index', {
       title: 'Electronics Shop',
@@ -25,14 +25,14 @@ exports.index = function(req, res){
   });
 };
 
-exports.addProduct = function (req,res){
+/*exports.addProduct = function (req,res){
 
-    var data = new Products({id : 1,
-        name : "Nokia Asha 205",
-        price : 2000,
-        qty : 200,
-        image : '',
-        colors: ['Black', 'White', 'Red']});
+    var data = new Products({"id" : 1,
+        "name" : "Nokia Asha 205",
+        "price" : 2000,
+        "qty" : 200,
+        "image" : '',
+        "colors": ['Black', 'White', 'Red']});
 
     data.save(function (err,data){
         if(err){
@@ -45,7 +45,7 @@ exports.addProduct = function (req,res){
         res.send("done");
     });
 
-};
+};*/
 
 products = function(){
     return [
